@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/act_three"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/act_three_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:text="Relative Layout" />
+
+    <ListView
+        android:id="@+id/act_three_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_below="@+id/act_three_text_view"/>
+
+    <Button
+        android:id="@+id/act_three_button_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_below="@+id/act_three_list_view" />
+
+    <Button
+        android:id="@+id/act_three_button_proximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximo"
+        android:layout_below="@+id/act_three_list_view"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/act_three_button_voltar"/>
+</RelativeLayout>
